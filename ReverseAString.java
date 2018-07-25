@@ -18,7 +18,28 @@ public class ReverseAString {
 
 	}
 
+	/*
+	 * METHOD 1:
+	 */
 	private static void reverseAString(String inputString) {
+		
+		String reverseString= "";
+		
+		for(int i = inputString.length()-1; i>=0;i--) {
+			
+			  reverseString += inputString.charAt(i);
+		}
+		
+		System.out.println(reverseString);
+		
+	}
+	
+	
+
+	/*
+	 * METHOD 2:
+	 * 
+	 * private static void reverseAString(String inputString) {
 		
 		//create a character array of the string
 		char[] charArr = inputString.toCharArray();
@@ -36,6 +57,6 @@ public class ReverseAString {
 		String reverseString = String.valueOf(reverseCharArr);
 		System.out.println(reverseString);
 		
-	}
+	}*/
 
 }
